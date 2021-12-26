@@ -19,7 +19,6 @@ public class MixinPlayerManager {
         if (channel != null) {
             channel.sendMessage(
                     format(player, Settings.Messages.Discord.JOIN_MESSAGE)
-                    // player.getName().asString() + " **joined the server!**"
             ).queue();
         }
     }
@@ -30,7 +29,6 @@ public class MixinPlayerManager {
         if (channel != null) {
             channel.sendMessage(
                     format(player, Settings.Messages.Discord.LEAVE_MESSAGE)
-                    // player.getName().asString() + " **left the server!**"
             ).queue();
         }
     }

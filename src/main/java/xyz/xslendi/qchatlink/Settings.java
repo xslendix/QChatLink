@@ -1,12 +1,9 @@
 package xyz.xslendi.qchatlink;
 
-import com.sun.jna.WString;
 import org.yaml.snakeyaml.Yaml;
 
 import java.io.*;
-import java.nio.file.CopyOption;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.Map;
 
 public class Settings {
@@ -62,7 +59,6 @@ public class Settings {
 
         if (!file.exists()) {
             try {
-                // file.createNewFile();
                 Files.copy(qchatlink.class.getResourceAsStream("/qchatlink.yaml"), file.toPath());
             } catch (IOException e) {
                 e.printStackTrace();
