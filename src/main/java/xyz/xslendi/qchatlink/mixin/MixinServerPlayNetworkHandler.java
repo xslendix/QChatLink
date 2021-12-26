@@ -24,8 +24,4 @@ public abstract class MixinServerPlayNetworkHandler {
         qchatlink.OnMessage(this.player, string);
     }
 
-    @Inject(at = @At(value = "TAIL"), method = "executeCommand")
-    private void onCommandExecuted(String input, CallbackInfo ci) {
-        //CommandExecutionCallback.EVENT.invoker().onExecuted(input, this.player.getCommandSource());
-    }
 }
