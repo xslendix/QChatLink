@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "qchatlink",
+  "version": "${version}",
+  "name": "QChatLink",
+  "description": "Discord bridge",
+  "license": "GPLv3",
+  "authors": [
+    "xSlendiX"
+  ],
+  "icon": "assets/qchatlink/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "xyz.xslendi.qchatlink.qchatlink"
+    ]
+  },
+  "mixins": [
+    "qchatlink.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": ">=1.18"
+  },
+  "fabric-permissions-api-v0": "*"
+}

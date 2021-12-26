@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.xslendi.qchatlink.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "MixinServerPlayNetworkHandler",
+    "MixinPlayerManager"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

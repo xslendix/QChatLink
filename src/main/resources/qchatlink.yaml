@@ -1,0 +1,42 @@
+##################
+#    DISCORD     #
+##################
+
+webhook: ""
+token: ""
+channel_id: ""
+
+##################
+#    MESSAGES    #
+##################
+
+# In-game messages
+# ================
+prefix: "§8[§9Discord§8] "
+suffix: ""
+
+# Message events: %tag%, %name%, %prefix%, %suffix%
+message: "%prefix%§e %name%§r: %message%"
+message_pinned: "%prefix% §e%name%§d has pinned a message."
+
+# Thread events: %title%, %tag%, %name%, %prefix%, %suffix%
+new_thread: "%prefix% §e%tag%§d has created a new thread: §r%title%"
+
+# Member events: %tag%, %name%, %prefix%, %suffix%
+member_join: "%prefix% §e%tag%§d has joined the server!"
+member_leave: "%prefix% §e%tag%§d has left the server!"
+member_boost: "%prefix% §e%tag%§d has boosted the server!"
+
+# Discord messages
+# ================
+
+# Server events
+server_starting: "**Server starting...**"
+server_start: "**Server started!**"
+
+server_stopping: "**Server stopping...**"
+server_stop: "**Server stopped!**"
+
+# Member events: %name%
+join_message: "%name% **joined the server!**"
+leave_message: "%name% **left the server!**"
